@@ -24,7 +24,7 @@
   
   <div class="panel-body">
     <div class="col-sm-10 col-sm-offset-2">
-		<form name="cadastrar/doca" class="form-horizontal" action="action/action.php" method="post" role="form">
+		<form name="cadastrar/doca" class="form-horizontal" action="" method="post" role="form">
 		
 		<div class="form-group">
 				<label for="inputEmail3">Pergunta Descrição:</label>			

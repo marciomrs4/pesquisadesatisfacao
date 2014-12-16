@@ -23,7 +23,7 @@
 	</div>
 	<div class="panel-body">
 	<div class="col-sm-10 col-sm-offset-2">
-		<form name="cadastrar/doca" class="form-horizontal" action="action/action.php" method="post" role="form">
+		<form name="cadastrar/doca" class="form-horizontal" action="" method="post" role="form">
 			
 			<div class="form-group">
 				<label for="inputEmail3">1 - Qual o seu nivel de satisfação com os serviços prestados pelo CEADIS:</label>			
