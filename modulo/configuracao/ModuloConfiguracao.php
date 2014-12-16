@@ -66,7 +66,7 @@
 									Dropdown</span>
 							</button>
 							<ul class="dropdown-menu" role="menu">
-								<li><a href="Pesquisa.php"><span class="glyphicon glyphicon-list-alt"></span>
+								<li><a href="ListarPesquisa.php"><span class="glyphicon glyphicon-list-alt"></span>
 										Pesquisa</a></li>
 								<li class="divider"></li>			
 								<li><a href="#"><span class="glyphicon glyphicon-list-alt"></span>

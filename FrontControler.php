@@ -14,13 +14,12 @@ $_SESSION['action'] = $action;
 
 $_SESSION['value'] = $value;
 
-$_SESSION[$modulo.'/'.$action] = $value;
+$_SESSION[$modulo.'/'.$action.'/value'] = $value;
 
 $_SESSION['moduloTemp'] = $modulo;
 $_SESSION['actionTemp'] = $action;
 $_SESSION['valueTemp'] = $value;
 
 header('location: '.$_SERVER['HTTP_REFERER']);
-
 
 ?>

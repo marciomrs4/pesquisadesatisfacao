@@ -46,11 +46,17 @@ class PesquisaEntity
 	public function setPesNome($pes_nome)
 	{
 		try{
-		V::string()->setName('Pesquisa')
+		V::string()->notEmpty()
+				   ->setName('Pesquisa')
 				   ->setTemplate('O campo {{name}} é obrigatório')
 				   ->assert($pes_nome);
+				   
+				   $this->pes_nome = $pes_nome;
+
+				   return $this;
+				   
 		}catch (\Exception $e){
-			throw new \Exception($e->getMessage(), $e->getCode());
+			throw new \Exception($e->getMainMessage(), $e->getCode()); 
 		}
 	}
 	
@@ -62,12 +68,18 @@ class PesquisaEntity
 	public function setPesData($pes_data)
 	{
 		try{
-			V::string()
+			V::notEmpty()
+			->date('Y-m-d')
 			->setName('Data da pesquisa')
 			->setTemplate('O campo {{name}} é obrigatório')
 			->assert($pes_data);
+			
+			$this->pes_data = date('Y-m-d',strtotime($pes_data));
+			
+			return $this;
+			
 		}catch (\Exception $e){
-			throw new \Exception($e->getMessage(), $e->getCode());
+			throw new \Exception($e->getMainMessage(), $e->getCode());
 		}
 	}
 	
@@ -79,12 +91,17 @@ class PesquisaEntity
 	public function setPesStatus($pes_status)
 	{
 		try{
-			V::string()
+			V::int()
 			->setName('Status')
 			->setTemplate('O campo {{name}} é obrigatório')
 			->assert($pes_status);
+			
+			$this->pes_status = $pes_status;
+			
+			return $this;
+			
 		}catch (\Exception $e){
-			throw new \Exception($e->getMessage(), $e->getCode());
+			throw new \Exception($e->getMainMessage(), $e->getCode());
 		}
 	}
 	

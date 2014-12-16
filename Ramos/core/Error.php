@@ -56,14 +56,9 @@ class Error
 	}
 
 	public function clear()
-	{
-
-		$modulo = $_SESSION['modulo'];
-		$action = $_SESSION['action'];
-		
-		unset($_SESSION['action'],$_SESSION['modulo'],
-			  $_SESSION['value'],$_SESSION['erro'],
-			  $_SESSION['erros'],$_SESSION[$modulo.'/'.$action]);
+	{		
+		unset($_SESSION['erro'],$_SESSION['erros'],
+			  $_SESSION['action']);
 	}
 	
 }
