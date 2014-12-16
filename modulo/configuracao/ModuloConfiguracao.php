@@ -34,7 +34,7 @@
 																				->setUrlAction('cadastrar/TipoPergunta')
 																				->getUrl();
 													 ?>"><span class="glyphicon glyphicon-plus"></span>
-										Tipo de Perguntas</a></li>
+										Tipo de Pergunta</a></li>
 								<li><a href="#"><span class="glyphicon glyphicon-plus"></span>
 										Perguntas</a></li>
 								<li><a href="#"><span class="glyphicon glyphicon-plus"></span>
@@ -69,8 +69,8 @@
 								<li><a href="ListarPesquisa.php"><span class="glyphicon glyphicon-list-alt"></span>
 										Pesquisa</a></li>
 								<li class="divider"></li>			
-								<li><a href="#"><span class="glyphicon glyphicon-list-alt"></span>
-										Another action</a></li>
+								<li><a href="ListarTipoPergunta.php"><span class="glyphicon glyphicon-list-alt"></span>
+										Tipo de Pergunta</a></li>
 								<li><a href="#"><span class="glyphicon glyphicon-list-alt"></span>
 										Something else here</a></li>
 								<li class="divider"></li>
