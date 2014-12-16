@@ -7,19 +7,19 @@ date_default_timezone_set('America/Sao_Paulo');
 $configGlobal = array();
 
 #Pasta do Projeto
-$configGlobal['basepath'] = 'ZeroProject';
+$configGlobal['basepath'] = 'pesquisadesatisfacao';
 
 #Nome do Projeto
-$configGlobal['projectName'] = 'Projeto Zero';
+$configGlobal['projectName'] = 'Menu Principal';
 #Nome do Sistema
-$configGlobal['systemName'] = '..:: Exemplo ::..';
+$configGlobal['systemName'] = '..:: Pesquisa de Satisfação ::..';
 
 #Itens do menu principal
-$configGlobal['exemplo'] = 'exemplo';
-$configGlobal['home'] = 'Home';
-$configGlobal['administracao'] = 'Administra��o';
+$configGlobal['relatorio'] = 'Relatórios';
+$configGlobal['configuracao'] = 'Configurações';
 
-#Titulo do rodap�
-$configGlobal['tituloRodape'] = '..:: Sistema Exemplo ::..';
+
+#Titulo do rodap�
+$configGlobal['tituloRodape'] = '..:: Tecnologia da Informação ::..';
 
 ?>

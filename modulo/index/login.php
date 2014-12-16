@@ -8,7 +8,7 @@ $existe = in_array($_POST['usuario'], $users);
 
 if($existe){
 	echo "<script>
-			window.document.location.href = '../{$configGlobal['exemplo']}';		
+			window.document.location.href = '../relatorio';		
 		  </script>";
 
 }else{

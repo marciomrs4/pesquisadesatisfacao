@@ -18,16 +18,14 @@
 						<span class="glyphicon glyphicon-arrow-down"></span>
 					</button>
 					<ul class="dropdown-menu">
-						<li><a href="../exemplo/"><span class="glyphicon glyphicon-home"></span> exemplo</a></li>					
-						<li><a href="../home/"><span class="glyphicon glyphicon-usd"></span> <?php echo $configGlobal['home']?></a></li>
+						<li><a href="../relatorio/"><span class="glyphicon glyphicon-book"></span> <?php echo $configGlobal['relatorio']?></a></li>
+						<li><a href="../configuracao/"><span class="glyphicon glyphicon-cog"></span> <?php  echo $configGlobal['configuracao'] ?></a></li>
 						<li class="divider"></li>
 						<li><a href="#"><span class="glyphicon glyphicon-user"></span> Alterar Senha</a></li>
 					</ul>
 				</div>
 
 			</div>
-
-
 
 			<div class="nav navbar-left collapse navbar-collapse">
 				<p class="navbar-text"><?php echo($configGlobal['systemName']);?></p>

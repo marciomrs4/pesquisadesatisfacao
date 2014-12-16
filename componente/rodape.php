@@ -26,7 +26,7 @@ $Message = new M();
   </div>
 </div>
 
-<!-- Inicio RodapÈ -->
+<!-- Inicio RodapÔøΩ -->
 		<footer>
 			<nav class="navbar navbar-default navbar-fixed-bottom"
 				role="navigation">
@@ -45,7 +45,7 @@ $Message = new M();
 				</div>
 				<div class="nav navbar-right collapse navbar-collapse" id="este">
 					<button class="btn btn-default btn-lg">
-						<span class="glyphicon glyphicon-user"></span> Usu·rio
+						<span class="glyphicon glyphicon-user"></span> Usu√°rio
 					</button>
 				</div>
 

@@ -13,7 +13,7 @@
 
 		<div class="panel panel-primary">
 			<div class="panel-heading panel-title">
-				Projeto Zero
+				Pesquisa de Satisfação
 			</div>
 			<div class="panel-body well">
 				<div class="row">
