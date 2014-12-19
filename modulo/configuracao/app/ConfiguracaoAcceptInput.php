@@ -14,7 +14,7 @@ class ConfiguracaoAcceptInput extends PostController
 		
 		if($_SERVER['REQUEST_METHOD'] == 'POST'){
 			
-			filter_var_array($this->post,FILTER_SANITIZE_STRING);
+			$this->post = filter_var_array($this->post,array(FILTER_SANITIZE_STRING,FILTER_SANITIZE_SPECIAL_CHARS));
 			
 			try{
 			
@@ -49,8 +49,10 @@ class ConfiguracaoAcceptInput extends PostController
 	{
 	
 		if($_SERVER['REQUEST_METHOD'] == 'POST'){
-				
-			filter_var_array($this->post,FILTER_SANITIZE_STRING);
+
+			$filtros = array('pes_nome' => FILTER_SANITIZE_STRING);
+			
+			$this->post = filter_var_array($this->post,$filtros);
 				
 			try{
 
