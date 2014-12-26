@@ -33,7 +33,7 @@
 					</div>
 					<div class="col-sm-6 col-sm-offset-1">
 						<div class="panel-body">
-							<img src="../../img/495.gif" class="img-responsive img-rounded" alt="Logotipo">
+							<img src="../../img/qualidade.png" class="img-responsive img-rounded" alt="Logotipo">
 						</div>
 					</div>
 				</div>
