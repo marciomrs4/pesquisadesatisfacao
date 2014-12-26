@@ -13,8 +13,11 @@ if($_POST){
 	
 			try {
 				
-				$post = new ConfiguracaoAcceptInput ();
-				$post->setPost ( $_POST )->cadastrarPesquisa ()->clearPost ( 'cadastrar/Pesquisa' )->router ( '../ListarPesquisa.php' );
+				$post = new ConfiguracaoAcceptInput();
+				$post->setPost($_POST)
+					 ->cadastrarPesquisa()
+					 ->clearPost('cadastrar/Pesquisa')
+					 ->router ('../ListarPesquisa.php');
 		
 			} catch ( Exception $e ) {
 				

@@ -14,7 +14,7 @@ class ConfiguracaoAcceptInput extends PostController
 		
 		if($_SERVER['REQUEST_METHOD'] == 'POST'){
 			
-			$this->post = filter_var_array($this->post,array(FILTER_SANITIZE_STRING,FILTER_SANITIZE_SPECIAL_CHARS));
+			$this->post = filter_var_array($this->post,FILTER_SANITIZE_STRING);
 			
 			try{
 			
@@ -49,12 +49,15 @@ class ConfiguracaoAcceptInput extends PostController
 	{
 	
 		if($_SERVER['REQUEST_METHOD'] == 'POST'){
-
-			$filtros = array('pes_nome' => FILTER_SANITIZE_STRING);
 			
-			$this->post = filter_var_array($this->post,$filtros);
+			$this->post = filter_var_array($this->post,FILTER_SANITIZE_STRING);
 				
 			try{
+				
+				
+			if($this->post['pes_status'] == ''){
+				$this->post['pes_status'] = 0;	
+			}
 
 	
 				$pesquisaEntity = new PesquisaEntity();
